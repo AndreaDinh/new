@@ -1,0 +1,85 @@
+@media screen and (min-width: 480px) {
+/*This is a condition statement: if the page is a print style and/or if the min-width is not 480px then everything under this @media won't be applied*/
+/*applies to anything larger than smartphone's screen, combined with the next @media=> will applies to something ex: ipad etc*/
+
+  /*************************
+  TWO COLUMN LAYOUT
+  **************************/
+  #primary {
+    width: 50%;
+    float: left;
+  }
+
+  #secondary {
+    width: 40%;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 660px) {
+/*applies to desktop screen specifically*/
+
+/*Margin: 3 * 5%= 15%
+  100% - 15% = 85% <=> Each Column= 85%/3= 28.3333333333333*/
+
+
+  /*************************
+  PAGE: PORTFOLIO
+  **************************/
+
+  #gallery li {
+    width: 28.3333333333333%;
+  }
+
+  #gallery li:nth-child(4n) {
+    clear: left;
+  }
+
+  /*************************
+  PAGE: ABOUT
+  **************************/
+
+  .profile-pic {
+    float: left;
+    margin: 0 5% -200px 0;
+  }
+
+  h3.about-text, p.about-text {
+    display:block;
+    margin: 0 0 10px 250px;
+  }
+
+  /*************************
+  HEADER
+  **************************/
+
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right:  5%;
+    text-align: right;
+    width: 45%;
+  }
+
+  #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size:  0.85em;
+    margin-bottom:25px;
+  }
+
+  header {
+    border-bottom: 5px solid #599868;
+    margin-bottom: 60px;
+  }
+}
